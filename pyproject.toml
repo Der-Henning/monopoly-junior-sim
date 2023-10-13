@@ -1,0 +1,22 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.poetry]
+authors = ["Henning Merklinger <henning.merklinger@gmail.com>"]
+description = ""
+name = "monopoly-junior-sim"
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
+pre-commit = "^3.4.0"
+
+[tool.poetry.group.sim.dependencies]
+matplotlib = "^3.8.0"
+seaborn = "^0.13.0"
+tqdm = "^4.66.1"
