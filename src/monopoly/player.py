@@ -18,7 +18,7 @@ class Player:
         self.id = id
         self.board = board
         self.position = 0
-        self.money = money
+        self.money = self.board.bank.withdraw(money)
         self.token = token
         self.game_over = False
         self.in_jail = False
